@@ -185,3 +185,32 @@ strong { color:#3c2a67; font-weight:800; }
 .button-light-ghost .icon { width:17px; height:17px; }
 @media (max-width:1050px) { .cv-grid, .benefit-grid { grid-template-columns:1fr; } .calculator-grid { grid-template-columns:1fr; } .calculator-output { grid-template-columns:1fr; } .calculator-output > div { border-right:0; border-bottom:1px solid rgba(255,255,255,.16); } .calculator-output > div:last-child { border-bottom:0; } }
 @media (max-width:760px) { .hero-cta-row .button { flex:1 1 200px; } .outcome-item { grid-template-columns:75px 1fr; gap:10px; padding:14px; } .outcome-metric { font-size:23px; } .header-cta { font-size:8px; } .closing-buttons { flex-direction:column; align-items:stretch; } .closing-buttons .button { width:100%; } }
+
+/* Lisibilite renforcee : v3 */
+/* Descriptions et paragraphes : uniformisation a 15 px minimum. */
+.cv-card p { font-size: 15px; line-height: 1.65; }
+.outcome-item p { font-size: 15px; line-height: 1.65; }
+.benefit-card p { font-size: 15px; line-height: 1.7; }
+.service-card p { font-size: 15px; line-height: 1.65; }
+.reference-entry span:not(.reference-pin) { font-size: 15px; line-height: 1.65; }
+.section-intro { font-size: 15px; line-height: 1.7; }
+.intro-section p, .references p { font-size: 15px; line-height: 1.75; }
+.intro-section .lead { font-size: 16px; }
+.closing p { font-size: 15px; }
+.location { font-size: 14px; }
+/* Les titres et actions augmentent legerement pour conserver la hierarchie. */
+.cv-card h3, .benefit-card h3 { font-size: 18px; }
+.service-card h3, .outcome-item h3 { font-size: 16px; }
+.reference-entry strong { font-size: 15px; }
+.cv-card .button { font-size: 14px; line-height: 1.4; }
+.button { font-size: 14px; }
+.cv-pill, .benefit-tag { font-size: 11px; }
+/* Les notes et etiquettes ne descendent plus a 10 px. */
+.evidence-note { font-size: 12px !important; }
+.calculator-disclaimer { font-size: 12px; }
+.calc-field, .calculator-output span { font-size: 13px; }
+.stat-strip div > span { font-size: 12px; }
+.shortcut-grid span { font-size: 12px; }
+@media (max-width:380px) {
+  .stat-strip div > span { font-size: 11px; }
+}
