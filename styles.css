@@ -137,3 +137,51 @@ strong { color:#3c2a67; font-weight:800; }
   .stat-strip div > span { font-size:8px; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *, *:before, *:after { transition:none!important; } }
+
+/* Conversion & preuves : v2 */
+.header-cta { text-decoration:none; border:1px solid #e8def6; border-radius:50px; padding:11px 14px; background:#fff; transition:background .2s; }
+.header-cta:hover { background:#f1eafa; }
+.header-cta .icon { width:14px; height:14px; color:#7030c8; }
+.button-vcf { border-color:#e9e0f8; color:#5f378f; background:#fff; padding:12px 15px; }
+.button-outline { background:#fff; color:#53279b; border-color:#d9c6ef; }
+.button-outline:hover { border-color:#934dec; background:#fcfaff; }
+.hero-cta-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+.hero-cta-row .button { padding:13px 17px; }
+.evidence-note { margin:0!important; padding-top:7px; font-size:10px!important; color:#817a90!important; line-height:1.6!important; }
+.section-intro { font-size:13px; color:#756b86; line-height:1.75; margin-top:-8px; margin-bottom:18px; }
+.cv-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.cv-card { padding:21px 18px; border:1px solid #e9e1f4; border-radius:16px; display:flex; flex-direction:column; gap:11px; background:linear-gradient(155deg,#fff,#f9f6ff); }
+.cv-card:nth-child(2) { background:linear-gradient(155deg,#fff,#fff7fe); }
+.cv-pill { align-self:flex-start; background:#ede5fb; color:#6431a3; font-size:9px; font-weight:850; letter-spacing:1px; border-radius:100px; padding:5px 9px; }
+.cv-card h3 { font-size:16px; color:#29203f; line-height:1.35; margin:0; }
+.cv-card p { font-size:12px; color:#777083; line-height:1.65; margin:0 0 auto; }
+.cv-card .button { margin-top:7px; font-size:11px; padding:12px 10px; }
+.outcome-list { display:grid; gap:13px; }
+.outcome-item { display:grid; grid-template-columns:95px 1fr; gap:18px; align-items:center; border:1px solid #efe7f7; border-radius:15px; padding:17px; background:#fdfbff; }
+.outcome-metric { font-size:29px; font-weight:850; color:#6328c1; letter-spacing:-1.8px; white-space:nowrap; }
+.outcome-icon { font-size:25px; letter-spacing:0; }
+.outcome-item h3 { font-size:14px; margin:0 0 5px; line-height:1.3; color:#392b54; }
+.outcome-item p { font-size:12px; color:#70697f; margin:0; line-height:1.65; }
+.benefit-grid { display:grid; grid-template-columns:1fr 1fr; gap:13px; }
+.benefit-card { padding:20px; background:#fbf9ff; border:1px solid #ece5f6; border-radius:16px; }
+.benefit-tag { color:#8246b3; font-size:9px; font-weight:850; letter-spacing:1.1px; }
+.benefit-card h3 { font-size:16px; line-height:1.4; margin:12px 0 10px; }
+.benefit-card p { font-size:12px; line-height:1.65; color:#756e80; }
+.benefit-card .benefit-example { padding-top:11px; border-top:1px solid #e9e1f4; margin-bottom:0; }
+.calculator-panel { background:linear-gradient(160deg,#fff,#fbf8ff); }
+.calculator-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.calc-field { font-size:10.5px; color:#675b7c; display:flex; flex-direction:column; gap:9px; font-weight:700; }
+.calc-field input { width:100%; padding:13px 11px; border-radius:11px; background:#fff; border:1px solid #dcd2ea; font-size:15px; color:#2e1e58; font-weight:800; }
+.calc-field input:focus-visible { outline:3px solid #d2b4f2; }
+.calculator-output { display:grid; grid-template-columns:repeat(3,1fr); margin-top:17px; border-radius:15px; overflow:hidden; background:#352064; color:#fff; }
+.calculator-output > div { display:flex; flex-direction:column; gap:6px; padding:16px 12px; border-right:1px solid rgba(255,255,255,.16); }
+.calculator-output > div:last-child { border-right:none; }
+.calculator-output span { color:#e2d3f6; font-size:10px; }
+.calculator-output strong { color:#fff; font-size:clamp(12px,1.5vw,17px); line-height:1.25; }
+.calculator-disclaimer { font-size:10px; color:#7b7287; margin:13px 0 15px; line-height:1.65; }
+.calc-cta { padding:12px 16px; }
+.closing-buttons { display:flex; flex-wrap:wrap; gap:11px; align-items:center; }
+.button-light-ghost { border-color:rgba(255,255,255,.45); color:#fff; background:transparent; }
+.button-light-ghost .icon { width:17px; height:17px; }
+@media (max-width:1050px) { .cv-grid, .benefit-grid { grid-template-columns:1fr; } .calculator-grid { grid-template-columns:1fr; } .calculator-output { grid-template-columns:1fr; } .calculator-output > div { border-right:0; border-bottom:1px solid rgba(255,255,255,.16); } .calculator-output > div:last-child { border-bottom:0; } }
+@media (max-width:760px) { .hero-cta-row .button { flex:1 1 200px; } .outcome-item { grid-template-columns:75px 1fr; gap:10px; padding:14px; } .outcome-metric { font-size:23px; } .header-cta { font-size:8px; } .closing-buttons { flex-direction:column; align-items:stretch; } .closing-buttons .button { width:100%; } }
